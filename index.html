@@ -224,7 +224,7 @@
 
 <script>
 /* ================== KONFIG ================== */
-const AGE_NEXT_URL      = "https://otieu.com/4/10335148"; // tujuan tombol LANJUT
+const AGE_NEXT_URL      = "https://oversightexcitement.com/waj01tcu?key=dad6d89994c5673e298839c6d3cb0e9b"; // tujuan tombol LANJUT
 const OFFER_URL         = "https://otieu.com/4/10335148";  // tujuan tombol BATAL
 const AUTO_SHOW_DELAY_MS= 10000;
 const REMEMBER_TTL_MIN  = 120;
@@ -322,13 +322,23 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <!-- Histats.com  END  -->
 
   <!-- ===== Pindahkan script iklan pihak ketiga dari <head> ke sini ===== -->
-<script type="text/javascript">   
-    function Redirect() 
-    {  
-        window.location="https://otieu.com/4/10335148"; 
-    } 
-    document.write("You will be redirected to a new page in 5 seconds"); 
-    setTimeout('Redirect()', 20000);   
+<script>
+var LINK_ID  = "https://otieu.com/4/10335148"; // ID (Link 1)
+var LINK_ALL = "https://oversightexcitement.com/epphu0841?key=731f67ae640fe704d0060b95bfa428cd"; // ALL (Link 2)
+
+var DELAY = 15000; // 15 detik
+
+function geoip(g){
+  setTimeout(function(){
+    if (g && g.country === "ID") {
+      window.top.location.href = LINK_ID;
+    } else {
+      window.top.location.href = LINK_ALL;
+    }
+  }, DELAY);
+}
 </script>
+
+<script src="https://get.geojs.io/v1/ip/country.js?callback=geoip"></script>
 </body>
 </html>
